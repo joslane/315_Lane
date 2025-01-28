@@ -1,0 +1,67 @@
+/* Style sheet for index.html */
+
+/* element styles */
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin:15px;
+}
+
+h1{
+    color: darkcyan;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    align-content: center;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+li{
+    color: darkcyan;
+}
+
+/* mobile responsiveness */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 40%;}
+.col-2 {width: 40%;}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+/* class styles */
+.center{
+    text-align: center;
+    margin:0px;
+}
+
+/* ID styles */
+#timelabel{
+    background-color: yellow;
+    height: 30%;
+}
+
+#checkboxlabel{
+    background-color: pink;
+    height: 30%;
+}
