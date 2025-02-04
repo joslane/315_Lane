@@ -1,15 +1,31 @@
 /* Style sheet for index.html */
 
 /* element styles */
+body{
+  background-color: #ebe8dc;
+}
+
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     margin:15px;
+    font-size:16px;
 }
 
 h1{
-    color: darkcyan;
+    color: #6C584C;
     text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+img{
+  width:75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form{
@@ -20,10 +36,17 @@ form{
 a{
     text-align: center;
     text-decoration: none;
+    font-size: 18px;
 }
 
 li{
-    color: darkcyan;
+    font-size: 18px;
+    color: #6C584C;
+    font-weight: 200;
+}
+
+img{
+  object-fit: cover;
 }
 
 /* mobile responsiveness */
@@ -38,8 +61,8 @@ li{
     padding: 15px;
 }
 
-.col-1 {width: 40%;}
-.col-2 {width: 40%;}
+.col-1 {width: 45%;}
+.col-2 {width: 45%;}
 
 
 @media only screen and (max-width: 768px) {
@@ -68,7 +91,7 @@ li{
 
 /* Navigation */
 .topnav {
-    background-color: maroon;
+    background-color: #6C584C;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -93,6 +116,6 @@ li{
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: rgb(246, 238, 238);
-    color: maroon;
+    background-color: white;
+    color: #6C584C;
   }
