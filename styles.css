@@ -49,6 +49,23 @@ img{
   object-fit: cover;
 }
 
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #927e71;
+}
+
+tr:nth-child(even) {
+  background-color: #ebe7e5;
+}
+
+tr:nth-child(odd) {
+  background-color: #e1cbbb;
+}
+
 /* mobile responsiveness */
 .row::after {
     content: "";

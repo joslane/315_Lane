@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 3: Schedule</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="/315_Lane/proj3.js" defer></script>
+    </head>
+    <body>
+        <h1>Schedule Page</h1>
+        <table>
+            <tr>
+                <th style="width:20%">Course</th>
+                <th style="width:20%">Days</th>
+                <th style="width:20%">Time Frame</th>
+                <th style="width:20%">Professor</th>
+            </tr>
+            <tr>
+                <td>CSCN 111</td>
+                <td>T/R</td>
+                <td>8:15 AM - 9:30 AM</td>
+                <td>Sipantzi</td>
+            </tr>
+            <tr>
+                <td>CSCN 111</td>
+                <td>M/W/F</td>
+                <td>12:00 PM - 12:50 PM</td>
+                <td>Kalu</td>
+            </tr>
+            <tr>
+                <td>CSCN 112</td>
+                <td>T/R</td>
+                <td>11:15 AM - 12:30 PM</td>
+                <td>Poole</td>
+            </tr>
+            <tr>
+                <td>CSCN 215</td>
+                <td>M/W/F</td>
+                <td>9:20 AM - 10:10 AM</td>
+                <td>Sipantzi</td>
+            </tr>
+            <tr>
+                <td>CSCN 230</td>
+                <td>M/W/F</td>
+                <td>8:15 AM - 9:20 AM</td>
+                <td>Donahoo</td>
+            </tr>
+            <tr>
+                <td>CSCN 315</td>
+                <td>T/R</td>
+                <td>12:45 PM - 2:00 PM</td>
+                <td>Smith</td>
+            </tr>
+            <tr>
+                <td>CSCN 326</td>
+                <td>M/W/F</td>
+                <td>12:00 PM - 12:50 PM</td>
+                <td>Poole</td>
+            </tr>
+        </table>
+        <br><br>
+        <form id="userForm">
+            <label for="professor">Select a professor to see which courses they teach:</label>
+            <select id="professor">
+                <option value=""></option>
+                <option value="Donahoo">Donahoo</option>
+                <option value="Kalu">Kalu</option>
+                <option value="Poole">Poole</option>
+                <option value="Sipantzi">Sipantzi</option>
+                <option value="Smith">Smith</option>
+            </select><br>
+            <label for="days">Select a day to see all courses on that day:</label>
+            <select id="days">
+                <option value=""></option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="W">W</option>
+                <option value="R">R</option>
+                <option value="F">F</option>
+            </select>
+            <input id="submitButton" type="submit">
+        </form>
+        <br>
+        <p id="result"></p>
+        <br>
+        <p id="dayResult"></p>
+    </body>
+</html>
