@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // prevent reload
         event.preventDefault();
 
-        // First Functionality: professor's courses taught---------------------------------
+        // First Functionality: professor's courses taught (FOR loop) -------------------------
         // find professor to display
         const selectedProfessor = professorSelect.value;
 
@@ -36,13 +36,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        // Second functionality: courses offered on a specific day----------------------------
+        // Second functionality: courses offered on a specific day (if/else & switch) -------------------------------
         // retrieve selected day
         const selectedDay = daySelect.value;
         let dayString = ""
 
         // find matching courses
         for (let i = 0; i < tds.length; i++){
+
+            // Switch statement to determine which classes are offered on that day
             switch(tds[i].innerHTML){
                 // if MWF class
                 case 'M/W/F':
@@ -66,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
+        // if/else statements to rewrite the provided day as the whole word, not just a letter
         let selectedDayLong = "";
         if (selectedDay == 'M'){
             selectedDayLong = 'Monday';
@@ -83,16 +86,18 @@ document.addEventListener("DOMContentLoaded", function () {
             selectedDayLong = "Friday";
         }
 
+
         // debug help
         console.log(courses);
 
-        // format output
+        // display courses by the professor
         if (courses.length > 0) {
             resultParagraph.innerHTML = `<strong>Courses taught by Professor ${selectedProfessor}:</strong><br>` + resultString;
         } else {
             resultParagraph.textContent = "No courses found.";
         }
 
+        // display courses on the day
         if (dayString.length > 0) {
             dayResult.innerHTML = `<strong>Courses on ${selectedDayLong}:</strong><br>` + dayString;
         } else {
