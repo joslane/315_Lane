@@ -136,3 +136,85 @@ tr:nth-child(odd) {
     background-color: white;
     color: #6C584C;
   }
+
+
+
+
+  /* Image stuff */
+
+/* Styles for the box containing slide images */
+
+
+
+
+/* Image with overlay */
+div#lbImages img {
+  display: block;
+  height: auto;
+  filter: opacity(1);
+  cursor: pointer;
+  outline: 2px solid #9C6908;
+  box-shadow: 3px 3px 10px black;  
+  user-select: none;   
+}
+
+
+/* Hovering for the image */
+div#lbImages img:hover {
+  filter: opacity(0.8);
+}
+
+/* Overlay */
+div#lbOverlay {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(104,49,0,0.85);  /* Semitransparent brown background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the figure box within the overlay */
+div#lbOverlay figure {
+  display: block;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Styles for the image within the overlay */
+div#lbOverlay figure img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 20px black;
+  animation-name: zoom;
+  animation-duration: 1s;
+}
+
+/* Close button */
+div#lbOverlay div#lbOverlayClose {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #f1f1f1;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hovering styles for the modal window close button */
+div#lbOverlay div#lbOverlayClose:hover {
+  color: #F7F1A9;
+  text-shadow: 3px 3px 0px black;
+}
+
+/* Keyframe animation for the opening of the modal window figure and caption */
+@keyframes zoom {
+ from {transform:scale(0)}
+ to {transform:scale(1)}
+}
