@@ -21,28 +21,36 @@
         <form id="userForm">
             <label for="fullname">Enter your full name:</label>
             <input type="text" id="fullname" required>
-            <br><br>
+            <p class="note">letters only</p>
+            
             <label for="username">Choose your username:</label>
             <input type="text" id="username" required>
-            <br><br>
+            <p class="note">6-15 characters; letters and numbers only; must start with a letter</p>
+
             <label for="userEmail">Enter your email:</label>
             <input type="email" id="userEmail" required>
-            <br><br>
+            <p class="note">valid email form (alex@gmail.com)</p>
+
             <label for="password">Create a password:</label>
             <input type="password" id="password" required>
-            <br><br>
+            <p class="note">8-20 characters; includes at least one uppercase letter, one lowercase letter, one digit, and one special character</p>
+
             <label for="passwordConfirmation">Confirm password:</label>
             <input type="password" id="passwordConfirmation" required>
-            <br><br>
+            <p class="note">matches password exactly</p>
+
             <label for="phoneNumber">Enter your phone number:</label>
             <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" required>
-            <br><br>
+            <p class="note">form: xxx-xxx-xxxx</p>
+
             <label for="birthdate">Enter your birthdate:</label>
             <input type="date" id="birthdate" required>
-            <br><br>
+            <p class="note">must be 18 years or older</p>
+
             <label for="confirm">I agree to the terms:</label>
             <input type="checkbox" id="confirm" required>
-            <br><br>
+            <p class="note">required</p>
+
             
             <button type="submit">Submit</button>
         </form>

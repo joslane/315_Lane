@@ -95,6 +95,10 @@ tr:nth-child(odd) {
     margin:0px;
 }
 
+.note{
+  font-size: 9px;
+}
+
 /* ID styles */
 #timelabel{
     background-color: yellow;
@@ -136,6 +140,7 @@ tr:nth-child(odd) {
     background-color: white;
     color: #6C584C;
   }
+
 
 
 
