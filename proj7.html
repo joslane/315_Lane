@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="topnav">
+            <nav>
+                <a href="/315_Lane/index.html">Home</a>
+                <a href="/315_Lane/about.html">About</a>
+                <a href="/315_Lane/projects.html">Projects</a>
+                <a href="/315_Lane/contact.html">Contact</a>
+            </nav>
+        </div>
+        <br>
+          
+        <h1 class="center">Project 7</h1>
+        <hr>
+        <form id="userForm">
+            <label for="fullname">Enter your full name:</label>
+            <input type="text" id="fullname" placeholder="Josiah J. Lane" required>
+            <p class="note">Format: First M. Last</p>
+         
+            <label for="userEmail">Enter your email:</label>
+            <input type="email" id="userEmail" required>
+            <p class="note">Format: email@domain.com</p>
+
+            <p>Select all the classes you have taken:</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="111">
+                        <label for="111">CSCN 111</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" id="112">
+                        <label for="112">CSCN 112</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="215">
+                        <label for="215">CSCN 215</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="250">
+                        <label for="250">MATH 250</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="315">
+                        <label for="315">CSCN 315</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="316">
+                        <label for="316">CSCN 316</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="342">
+                        <label for="342">CSCN 342</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="434">
+                        <label for="434">CSCN 434</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="443">
+                        <label for="443">CSCN 443</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="471">
+                        <label for="471">CSCN 471</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="481">
+                        <label for="481">CSCN 481</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="482">
+                        <label for="482">CSCN 482</label>
+                    </td>
+                </tr>
+            </table><br>
+
+            <label for="file">File upload (.txt only):</label>
+            <input type="file" id="file" ccept=".txt" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        
+
+        <p id="message"></p>
+        <br>
+        <br>
+
+        <p id="fileResult"></p>
+        <br>
+
+        <script src="/315_Lane/proj7.js"></script>
+    </body>
+</html>
