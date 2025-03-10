@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josiah Lane's Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="topnav">
+            <nav>
+                <a href="/315_Lane/index.html">Home</a>
+                <a href="/315_Lane/about.html">About</a>
+                <a href="/315_Lane/projects.html">Projects</a>
+                <a href="/315_Lane/contact.html">Contact</a>
+            </nav>
+        </div>
+        <br>
+        <form id="userForm">
+            <label for="fullname">Enter your full name:</label>
+            <input type="text" id="fullname" required>
+            <p class="note">letters only</p>
+            
+            <label for="username">Choose your username:</label>
+            <input type="text" id="username" required>
+            <p class="note">6-15 characters; letters and numbers only; must start with a letter</p>
+
+            <label for="userEmail">Enter your email:</label>
+            <input type="email" id="userEmail" required>
+            <p class="note">valid email form (alex@gmail.com)</p>
+
+            <label for="password">Create a password:</label>
+            <input type="password" id="password" required>
+            <p class="note">8-20 characters; includes at least one uppercase letter, one lowercase letter, one digit, and one special character</p>
+
+            <label for="passwordConfirmation">Confirm password:</label>
+            <input type="password" id="passwordConfirmation" required>
+            <p class="note">matches password exactly</p>
+
+            <label for="phoneNumber">Enter your phone number:</label>
+            <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" required>
+            <p class="note">form: xxx-xxx-xxxx</p>
+
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="date" id="birthdate" required>
+            <p class="note">must be 18 years or older</p>
+
+            <label for="confirm">I agree to the terms:</label>
+            <input type="checkbox" id="confirm" required>
+            <p class="note">required</p>
+
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+        <br>
+
+        <p id="result"></p>
+
+    
+        <!--<script src="/315_Lane/proj2.js"></script>-->
+        <script src="/315_Lane/proj6.js"></script>
+    </body>
+</html>

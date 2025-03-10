@@ -2,7 +2,7 @@
 
 /* element styles */
 body{
-  background-color: #ebe8dc;
+  background-color: #f8f7f4;
 }
 
 p{
@@ -19,6 +19,11 @@ h1{
 
 h2{
   text-align: center;
+  color: #927e71;
+}
+
+strong{
+  color: #6C584C;
 }
 
 img{
