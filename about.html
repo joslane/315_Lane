@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
         <link rel="stylesheet" href="styles.css" />
         <script src="/315_Lane/proj5.js"></script>
-        <script src="/315_Lane/objects.js"></script>
+        <script src="/315_Lane/proj9.js"></script>
     </head>
     <body>
         <div class="topnav">
@@ -38,6 +38,27 @@
                     One idea I have for a website this semester is a resume featuring personal projects!
                     I am not very set on this, though.
                 </p>
+
+                <br><hr><br>
+                <!-- Form for project 9: user customization -->
+                <form>
+                    <h1>Customize this page!</h1>
+                    <p>Format settings are saved for future visits</p>
+                    <label for="bgColor">Background Color:</label>
+                    <input type="color" id="bgColor"><br>
+                    <label for="textColor">Text Color:</label>
+                    <input type="color" id="textColor"><br>
+                    <label for="fontSize">Font Size:</label>
+                    <select id="fontSize">
+                        <option value="16"></option>
+                        <option value="6">6 pt</option>
+                        <option value="12">12 pt</option>
+                        <option value="16">16 pt</option>
+                        <option value="30">30 pt</option>
+                    </select><br>
+                    <button type="submit" id="customizeSubmit">Submit</button>
+
+                </form>
             </div>
 
             <div class="col-2">
