@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JQuery Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/315_Lane/index.html">Home</a>
+        <a href="/315_Lane/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="drop()">Projects <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="/315_Lane/projects.html">Greek Parsing Tool</a>
+                <a href="/315_Lane/proj3.html">Project 3: Reading webpage content</a>
+                <a href="/315_Lane/proj6.html">Project 6: Form Validation</a>
+                <a href="/315_Lane/proj7.html">Project 7: Values & reading a file</a>
+                <a href="/315_Lane/proj8.html">Project 8: Objects of a class</a>
+                <a href="/315_Lane/proj10.html">Project 10: Puzzle game</a></h2>
+                <a href="/315_Lane/characterFrequency.html">Character Frequency Tool</a>
+                <a class="active" href="/315_Lane/jQuery.html">JQuery & Predictive Search</a>
+            </div>
+        </div>
+        <a href="/315_Lane/contact.html">Contact</a>
+    </div>
+    
+    <!-- HTML for search -->
+    <h1>Search for a Book of the Bible</h1>
+    <p>Once you select a book by clicking on it, try the disappear and reappear effects!</p>
+
+    <div id="search-section">
+        <input type="text" id="bibleSearch" placeholder="Start typing...">
+        <ul id="suggestions"></ul>
+    </div>
+
+    <br>
+
+    <!-- This will contain the selected book once one is selected -->
+    <p id="selectedBook" style="display:none; font-weight: bold; font-size: 18px;"></p>
+
+    <br>
+
+    <!-- Shows effects that can be run -->
+    <div id="effects-section">
+        <button id="disappearBtn">Disappear</button>
+
+        <button id="reappearBtn">Reappear</button>
+    </div>
+
+</body>
+</html>

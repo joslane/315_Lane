@@ -4,15 +4,27 @@
         <title>Project 7</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
         <link rel="stylesheet" href="styles.css" />
+        <script src="nav.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="topnav">
-            <nav>
-                <a href="/315_Lane/index.html">Home</a>
-                <a href="/315_Lane/about.html">About</a>
-                <a href="/315_Lane/projects.html">Projects</a>
-                <a href="/315_Lane/contact.html">Contact</a>
-            </nav>
+            <a href="/315_Lane/index.html">Home</a>
+            <a href="/315_Lane/about.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="drop()">Projects <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="/315_Lane/projects.html">Greek Parsing Tool</a>
+                    <a href="/315_Lane/proj3.html">Project 3: Reading webpage content</a>
+                    <a href="/315_Lane/proj6.html">Project 6: Form Validation</a>
+                    <a class="active" href="/315_Lane/proj7.html">Project 7: Values & reading a file</a>
+                    <a href="/315_Lane/proj8.html">Project 8: Objects of a class</a>
+                    <a href="/315_Lane/proj10.html">Project 10: Puzzle game</a></h2>
+                    <a href="/315_Lane/characterFrequency.html">Character Frequency Tool</a>
+                    <a href="/315_Lane/jQuery.html">JQuery & Predictive Search</a>
+                </div>
+            </div>
+            <a href="/315_Lane/contact.html">Contact</a>
         </div>
         <br>
           
